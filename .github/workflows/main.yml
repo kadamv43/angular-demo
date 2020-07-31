@@ -33,5 +33,5 @@ jobs:
         PASSWORD: ${{ secrets.FORSSH }}
       with:
         source: "./dist/"
-        target: "/home/"
+        target: "/home/test"
         strip_components: 3 # this is important
