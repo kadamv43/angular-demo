@@ -11,7 +11,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-        run: echo hi
       - name: Cache node modules
         uses: actions/cache@v1
         with:
