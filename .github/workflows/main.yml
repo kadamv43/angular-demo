@@ -27,4 +27,5 @@ jobs:
           npm i
           npm run build:prod
       - name: Push Build to Releases
+          run: echo here
 
