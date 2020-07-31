@@ -27,11 +27,11 @@ jobs:
     - name: copy file via ssh key
       uses: appleboy/scp-action@master
       env:
-        HOST: 131.153.128.202
-        USERNAME: root
-        PORT: 22
+        HOST: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PORT: ${{ secrets.PORT }}
         PASSWORD: ${{ secrets.FORSSH }}
       with:
         source: "./dist/"
-        target: "/home/vinayak"
+        target: "/home/vinayak/"
         strip_components: 3 # this is important
